@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Popup Youtube video",
+    "short_name": "Popup Youtube",
+    "description": "Simple extension to popup a Youtube video watching.",
+    "version": "1.0",
+    "icons": { 
+        "16": "youtube-70-2.png",
+        "48": "youtube-70-2.png",
+        "128": "youtube-70-2.png" 
+    },
+    "background": {
+        "scripts": [ "background.js", "jquery.js", "jquery.urldecoder.min.js" ]
+    },
+    "permissions": ["tabs", "notifications"],
+    "browser_action": {
+        "default_icon": "youtube-70-2.png",
+        "default_title": "Popout Youtube Video"
+    }
+}
